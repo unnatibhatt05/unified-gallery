@@ -1,0 +1,87 @@
+.artworks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  padding: 40px;
+  background-color: #ffd8e9;
+}
+
+.artworks-section {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.artworks-content {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Spacing between image and text */
+}
+
+/* 🎨 Left Side: Image Card */
+.artworks-image-card {
+  width: 20%;
+  height: 300px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✨ Highlight Effect */
+.highlight-card {
+  border: 2px solid #ff9f43;
+  box-shadow: 0 4px 10px rgba(255, 159, 67, 0.4);
+}
+
+.highlight-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 159, 67, 0.6);
+}
+
+
+/* 📝 Right Side: Text */
+.artworks-text {
+  width: 70%;
+}
+
+.artworks-text h2 {
+text-align: start;
+  font-size: 30px;
+  margin-bottom: 15px;
+ 
+}
+
+.artworks-text p {
+  font-weight: bold;
+  font-size: px;
+  line-height: 1.6;
+  color: #860253;
+}
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .artworks-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .artworks-text {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .artworks-gallery {
+      max-width: 100%;
+    }
+  }
+  
+.artworks-title {
+  font-style: italic;
+  font-size: 30px;
+ text-decoration: wavy;
+  color: deeppink;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

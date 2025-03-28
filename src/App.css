@@ -1,0 +1,688 @@
+body {
+  background-color: #fff7f7 ; /* Change this color as needed */
+}
+
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px
+}
+
+.home-title {
+  color: #fb0685; /* Pink color */
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0; /* Ensures the text stays at the top */
+  padding-top: 10px; /* Adjust padding if needed */
+}
+
+
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero-image {
+  max-width: 450px;
+  height: auto;
+}
+
+/* About Preview */
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-image: contain;
+}
+
+.about-preview img {
+  width: 40%;
+
+}
+
+.about-text {
+  width: 55%;
+}
+
+/* Gallery Preview */
+.gallery-preview {
+  
+  margin-top: 50px;
+}
+
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-images img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* ------------------------ */
+/* Contact Page Styles */
+/* ------------------------ */
+
+.contact-container {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #ff1493;
+}
+
+/* Contact Info Section */
+.contact-info {
+  margin-top: 50px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.contact-details {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  font-size: 1.5rem;
+  color: #ff69b4;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+  color: #ff1493;
+}
+
+/* ------------------------ */
+/* Responsive Design for Contact Page */
+/* ------------------------ */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 50px 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+/* General Styles */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8eef2; /* Soft pink background */
+}
+
+
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero-image {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff1493; /* Deep pink */
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e60073; /* Darker pink */
+}
+
+/* About Preview */
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe4e1; /* Light pink */
+  padding: 60px;
+  text-align: left;
+}
+
+.about-text {
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #e8007b; /* Deep pink */
+}
+
+/* Gallery Preview */
+.gallery-preview {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Ensures text is at the top */
+  display: flex;
+ 
+  background: #ffd1dc; /* Lighter pink */
+}
+
+.gallery-images img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+.gallery-container1 {
+  background-color: #fff7f7 ; /* Change to your preferred color */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+/* General Page Styling */
+
+
+
+
+
+/* Section General Styling */
+.about-preview{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  text-align: left;
+}
+
+
+.about-text,
+.gallery-preview {
+  max-width: 50%;
+}
+
+/* Cards for Images */
+.card {
+  width: 270px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Gallery Images in a Row */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: top;
+}
+/* General Styling */
+.home-container {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+.hero-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* About Preview Section */
+.about-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  /* ✅ Ensuring About & Gallery have the same section width */
+ 
+  padding: 50px 0;
+  text-align: left;
+  padding: 50px 50px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+
+
+.about-preview img {
+  width: 50%;
+  max-width: 350px;
+  
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Preview Section */
+.gallery-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  /* ✅ Ensuring About & Gallery have the same section width */
+ padding: 50px;
+  max-width:200%;
+  text-align: top;
+ 
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-card {
+  width: 20%; /* ✅ Keeping all gallery images equal */
+  max-width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.gallery-preview h2 {
+  align-self: flex-start; /* ✅ Forces the heading to stay at the top */
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 10px; /* Adjust as needed */
+  padding-bottom: 10px;
+  color: #e8007b;
+}
+/*HeroSection*/
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px; /* Adjust based on your navbar height */
+  margin-bottom: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Ensures hero section is properly placed */
+}
+
+
+.hero-content {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Ensuring the image is inside hero-content */
+.hero-content img {
+  width: auto; /* Make it responsive */
+  height: auto;
+  border-radius: 10px; /* Optional styling */
+}
+/*Slider Images Card*/
+
+/* Slider Card - All images inside a card */
+.slider-card {
+  width: 60%;
+  max-width: 700px;
+  background: rgba(255, 240, 253, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Image inside the card */
+.slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text content */
+.slider-content h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.slider-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+/* Slider Buttons - Fixed Position */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4da6; /* Button Color */
+  font-size: 32px;
+  z-index: 10; /* Keep above slider */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Left Button */
+.slider-btn.left {
+  left: 5%;  /* Adjust as needed */
+}
+
+/* Right Button */
+.slider-btn.right {
+  right: 5%;  /* Adjust as needed */
+}
+
+/* Button Hover Effect (Scaling) */
+.slider-btn:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+
+
+/* 🌟 Contact Page Layout */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff7f7;
+  padding-top: 100px; /* ✅ Fixes navbar overlap */
+}
+
+/* 🟦 Contact Form Box (Highlighted) */
+.contact-box {
+  width: 500px;
+  background: rgb(255, 235, 242);
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid transparent; /* Default border */
+  box-shadow: 0 4px 15px rgba(255, 107, 129, 0.3); /* Soft highlight */
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 🌟 Glowing Effect on Hover */
+.contact-box:hover {
+  border-color: #ff6b81;
+  box-shadow: 0 0 15px rgba(255, 107, 129, 0.6);
+  transform: scale(1.02);
+}
+
+/* ✨ Gradient Border Animation */
+@keyframes glowing-border {
+  0% {
+    border-color: #ff6b81;
+    box-shadow: 0 0 15px rgba(255, 107, 129, 0.6);
+  }
+  50% {
+    border-color: #ff4d6d;
+    box-shadow: 0 0 20px rgba(255, 77, 109, 0.8);
+  }
+  100% {
+    border-color: #ff6b81;
+    box-shadow: 0 0 15px rgba(255, 107, 129, 0.6);
+  }
+}
+
+/* ✨ Apply Glowing Effect */
+.contact-box:focus-within {
+  animation: glowing-border 1.5s infinite alternate;
+}
+
+
+/* ✨ Form Styling */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff6b81;
+  box-shadow: 0 0 5px rgba(255, 107, 129, 0.5);
+}
+
+/* 📧 Contact Details */
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* 📱 Icons */
+svg {
+  color: #ff6b81;
+}
+/* 📩 Email & 📞 Phone Section */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Spacing between email & phone */
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* ✅ Aligns icon & text in a straight line */
+  gap: 10px; /* ✅ Creates spacing between icon & text */
+  font-size: 16px;
+  color: #444;
+}
+
+.contact-item svg {
+  width: 20px;
+  height: 20px;
+  color: #ff6b81; /* ✅ Matches button color */
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Center content properly */
+  padding: 40px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Space between image & text */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px; /* Keep the image size controlled */
+  height: auto;
+  border-radius: 10px; /* Optional: Adds smooth corners */
+}
+
+.social-media-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 28px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
