@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -24,19 +25,21 @@ const Footer = () => {
         <div className="footer-sitemap">
           <h5>Sitemap</h5>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </ul>
         </div>
 
         {/* Logo & Contact Info */}
         <div className="footer-logo">
           <img src="/unified logo.png" alt="Gallery Logo" />
           <div className="footer-icons">
-            <span>📧 Email: contact@unifiedgallery.com</span>
-            <span>📞 Phone: +91 98765 43210</span>
+            <span>📧 Email: bhattunnati9366@gmail.com</span>
+            <span>📞 Phone: +91 12345 06789</span>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Background Image */}
-      <img src="/Navbar img.jpg" alt="Navbar Background" className="navbar-bg" />
+      <img src="/navbar bg.png" alt="Navbar Background" className="navbar-bg" />
 
       {/* Logo */}
       <div className="navbar-logo">
