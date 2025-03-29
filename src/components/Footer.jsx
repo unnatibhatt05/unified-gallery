@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom"; // Correct way to navigate
 import "./Footer.css";
 
 const Footer = () => {
@@ -25,13 +25,11 @@ const Footer = () => {
         <div className="footer-sitemap">
           <h5>Sitemap</h5>
           <ul>
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
         </div>
 
         {/* Logo & Contact Info */}
