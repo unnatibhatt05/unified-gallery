@@ -22,30 +22,40 @@ function Contact() {
     setLoading(true);
     setSuccess(false);
     setError("");
-
-    // Trim and validate input
+  
     const trimmedData = {
       name: formData.name.trim(),
       email: formData.email.trim(),
       message: formData.message.trim(),
     };
-
+  
     if (!trimmedData.name || !trimmedData.email || !trimmedData.message) {
       setError("All fields are required.");
       setLoading(false);
       return;
     }
-
+  
     try {
-      await sendMessageToSheet(trimmedData); // Send data to Google Sheets
+      const response = await sendMessageToSheet(trimmedData); // Send data
+  
+      // Debugging: Log the full response
+      console.log("Raw Response:", response);
+  
+      // If response is not JSON, it might be an error page
+      if (typeof response !== "object") {
+        throw new Error("Invalid response format (not JSON). Check API.");
+      }
+  
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      setError("Failed to send message. Try again!");
+      console.error("Error:", err);
+      setError("Failed to send message. Check API access.");
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <>
